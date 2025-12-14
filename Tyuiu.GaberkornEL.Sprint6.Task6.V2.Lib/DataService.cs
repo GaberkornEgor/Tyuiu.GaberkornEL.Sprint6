@@ -1,34 +1,25 @@
-﻿using System;
-using System.IO;
-using System.Text;
-using tyuiu.cources.programming.interfaces.Sprint6;
+﻿using tyuiu.cources.programming.interfaces.Sprint6;
 
-namespace Tyuiu.GaberkornEL.Sprint6.Task6.V2.Lib
+namespace Tyuiu.TomilovDA.Sprint6.Task6.V2.Lib
 {
     public class DataService : ISprint6Task6V2
     {
-        public string CollectTextFromFile(string str, string path)
+        public string CollectTextFromFile(string path)
         {
-            StringBuilder result = new StringBuilder();
-
-            using (StreamReader reader = new StreamReader(path))
+            string resString = "";
+            using (StreamReader sr = new StreamReader(path))
             {
                 string line;
-                while ((line = reader.ReadLine()) != null)
+                while ((line = sr.ReadLine()) != null)
                 {
-                    string[] words = line.Split(new char[] { ' ' },
-                                               StringSplitOptions.RemoveEmptyEntries);
-
+                    string[] words = line.Split(" ");
                     if (words.Length > 1)
                     {
-                        if (result.Length > 0)
-                            result.Append(" ");
-                        result.Append(words[1]);
+                        resString += words[1] + " ";
                     }
                 }
             }
-
-            return result.ToString();
+            return resString.TrimEnd();
         }
     }
 }
