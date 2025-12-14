@@ -24,5 +24,10 @@ namespace Tyuiu.GaberkornEL.Sprint6.Task6.V2.Lib
 
             return resStr.Trim();
         }
+
+        string ISprint6Task6V2.CollectTextFromFile(string str, string path)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
