@@ -5,7 +5,7 @@ namespace Tyuiu.GaberkornEL.Sprint6.Task6.V2.Lib
     public class DataService : ISprint6Task6V2
     {
 
-        public string CollectTextFromFile(string path)
+        public string CollectTextFromFile(string str, string path)
         {
             string resStr = "";
 
@@ -23,11 +23,6 @@ namespace Tyuiu.GaberkornEL.Sprint6.Task6.V2.Lib
             }
 
             return resStr.Trim();
-        }
-
-        string ISprint6Task6V2.CollectTextFromFile(string str, string path)
-        {
-            throw new NotImplementedException();
         }
     }
 }
