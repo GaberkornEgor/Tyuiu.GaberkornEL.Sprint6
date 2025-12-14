@@ -8,6 +8,8 @@ namespace Tyuiu.GaberkornEL.Sprint6.Task6.V2.Lib
     {
         public string CollectTextFromFile(string str, string path)
         {
+            _ = str; 
+
             if (!File.Exists(path))
                 throw new FileNotFoundException($"File not found: {path}");
 
@@ -22,6 +24,7 @@ namespace Tyuiu.GaberkornEL.Sprint6.Task6.V2.Lib
                     {
                         string[] words = line.Split(new char[] { ' ' },
                                                   StringSplitOptions.RemoveEmptyEntries);
+
                         if (words.Length > 1)
                         {
                             if (result.Length > 0)
