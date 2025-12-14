@@ -50,13 +50,13 @@ namespace Tyuiu.GaberkornEL.Sprint6.Task1.V24
             // 
             this.groupBoxTask_GEL.Controls.Add(this.textBoxTask_GEL);
             this.groupBoxTask_GEL.Location = new System.Drawing.Point(13, 14);
-            this.groupBoxTask_GEL.Name = "groupBoxTask_VAA";
+            this.groupBoxTask_GEL.Name = "groupBoxTask_GEL";
             this.groupBoxTask_GEL.Size = new System.Drawing.Size(523, 255);
             this.groupBoxTask_GEL.TabIndex = 0;
             this.groupBoxTask_GEL.TabStop = false;
             this.groupBoxTask_GEL.Text = "Условие";
             // 
-            // textBoxTask_VAA
+            // textBoxTask_GEL
             // 
             this.textBoxTask_GEL.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.textBoxTask_GEL.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -99,7 +99,7 @@ namespace Tyuiu.GaberkornEL.Sprint6.Task1.V24
             this.textBoxRes_GEL.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxRes_GEL.Size = new System.Drawing.Size(233, 276);
             this.textBoxRes_GEL.TabIndex = 0;
-            this.textBoxRes_GEL.TextChanged += new System.EventHandler(this.textBoxRes_VAA_TextChanged);
+            this.textBoxRes_GEL.TextChanged += new System.EventHandler(this.textBoxRes_GEL_TextChanged);
             // 
             // groupBoxInput_GEL
             // 
@@ -108,34 +108,34 @@ namespace Tyuiu.GaberkornEL.Sprint6.Task1.V24
             this.groupBoxInput_GEL.Controls.Add(this.textBoxVarStop_GEL);
             this.groupBoxInput_GEL.Controls.Add(this.textBoxVarStart_GEL);
             this.groupBoxInput_GEL.Location = new System.Drawing.Point(13, 276);
-            this.groupBoxInput_GEL.Name = "groupBoxInput_VAA";
+            this.groupBoxInput_GEL.Name = "groupBoxInput_GEL";
             this.groupBoxInput_GEL.Size = new System.Drawing.Size(301, 75);
             this.groupBoxInput_GEL.TabIndex = 2;
             this.groupBoxInput_GEL.TabStop = false;
             this.groupBoxInput_GEL.Text = "Ввод данных:";
             // 
-            // labelVarStop_VAA
+            // labelVarStop_GEL
             // 
             this.labelVarStop_GEL.AutoSize = true;
             this.labelVarStop_GEL.Location = new System.Drawing.Point(153, 21);
-            this.labelVarStop_GEL.Name = "labelVarStop_VAA";
+            this.labelVarStop_GEL.Name = "labelVarStop_GEL";
             this.labelVarStop_GEL.Size = new System.Drawing.Size(89, 17);
             this.labelVarStop_GEL.TabIndex = 3;
             this.labelVarStop_GEL.Text = "Конец шага:";
             // 
-            // labelInputVarStart_VAA
+            // labelInputVarStart_GEL
             // 
             this.labelInputVarStart_GEL.AutoSize = true;
             this.labelInputVarStart_GEL.Location = new System.Drawing.Point(6, 24);
-            this.labelInputVarStart_GEL.Name = "labelInputVarStart_VAA";
+            this.labelInputVarStart_GEL.Name = "labelInputVarStart_GEL";
             this.labelInputVarStart_GEL.Size = new System.Drawing.Size(87, 17);
             this.labelInputVarStart_GEL.TabIndex = 2;
             this.labelInputVarStart_GEL.Text = "Старт шага:";
             // 
-            // textBoxVarStop_VAA
+            // textBoxVarStop_GEL
             // 
             this.textBoxVarStop_GEL.Location = new System.Drawing.Point(153, 44);
-            this.textBoxVarStop_GEL.Name = "textBoxVarStop_VAA";
+            this.textBoxVarStop_GEL.Name = "textBoxVarStop_GEL";
             this.textBoxVarStop_GEL.Size = new System.Drawing.Size(142, 22);
             this.textBoxVarStop_GEL.TabIndex = 1;
             this.textBoxVarStop_GEL.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -146,7 +146,7 @@ namespace Tyuiu.GaberkornEL.Sprint6.Task1.V24
             this.textBoxVarStart_GEL.Name = "textBoxVarStart_GEL";
             this.textBoxVarStart_GEL.Size = new System.Drawing.Size(142, 22);
             this.textBoxVarStart_GEL.TabIndex = 0;
-            this.textBoxVarStart_GEL.TextChanged += new System.EventHandler(this.textBoxVarStart_VAA_TextChanged);
+            this.textBoxVarStart_GEL.TextChanged += new System.EventHandler(this.textBoxVarStart_GEL_TextChanged);
             // 
             // buttonHelp_GEL
             // 
