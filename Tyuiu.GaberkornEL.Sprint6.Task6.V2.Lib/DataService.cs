@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.IO;
 using System.Text;
 using tyuiu.cources.programming.interfaces.Sprint6;
 
@@ -8,22 +9,26 @@ namespace Tyuiu.GaberkornEL.Sprint6.Task6.V2.Lib
     {
         public string CollectTextFromFile(string str, string path)
         {
-            string resStr = "";
+            StringBuilder result = new StringBuilder();
 
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    string[] words = line.Split(' ');
+                    string[] words = line.Split(new char[] { ' ' },
+                                               StringSplitOptions.RemoveEmptyEntries);
+
                     if (words.Length > 1)
                     {
-                        resStr = resStr + " " + words[1];
+                        if (result.Length > 0)
+                            result.Append(" ");
+                        result.Append(words[1]);
                     }
                 }
             }
 
-            return resStr.Trim();
+            return result.ToString();
         }
     }
 }
