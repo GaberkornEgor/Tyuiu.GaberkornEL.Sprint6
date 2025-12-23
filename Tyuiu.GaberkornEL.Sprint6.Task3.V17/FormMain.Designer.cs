@@ -6,15 +6,8 @@ namespace Tyuiu.GaberkornEL.Sprint6.Task3.V17
 {
     partial class FormMain
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -24,135 +17,126 @@ namespace Tyuiu.GaberkornEL.Sprint6.Task3.V17
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            groupBoxTask_GEL = new GroupBox();
-            dataGridViewTask_GEL = new DataGridView();
-            textBoxTask_GEL = new TextBox();
-            groupBoxOutput_GEL = new GroupBox();
-            dataGridViewResult_GEL = new DataGridView();
-            labelResult_GEL = new Label();
-            buttonInfo_GEL = new Button();
-            buttonRun_GEL = new Button();
-            groupBoxTask_GEL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewTask_GEL).BeginInit();
-            groupBoxOutput_GEL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewResult_GEL).BeginInit();
-            SuspendLayout();
-            // 
-            // groupBoxTask_GEL
-            // 
-            groupBoxTask_GEL.Controls.Add(dataGridViewTask_GEL);
-            groupBoxTask_GEL.Controls.Add(textBoxTask_GEL);
-            groupBoxTask_GEL.Location = new Point(12, 0);
-            groupBoxTask_GEL.Name = "groupBoxTask_GEL";
-            groupBoxTask_GEL.Size = new Size(475, 438);
-            groupBoxTask_GEL.TabIndex = 0;
-            groupBoxTask_GEL.TabStop = false;
-            groupBoxTask_GEL.Text = "Условие";
-            // 
-            // dataGridViewTask_GEL
-            // 
-            dataGridViewTask_GEL.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewTask_GEL.ColumnHeadersVisible = false;
-            dataGridViewTask_GEL.Location = new Point(225, 91);
-            dataGridViewTask_GEL.Name = "dataGridViewTask_GEL";
-            dataGridViewTask_GEL.ReadOnly = true;
-            dataGridViewTask_GEL.RowHeadersVisible = false;
-            dataGridViewTask_GEL.RowHeadersWidth = 51;
-            dataGridViewTask_GEL.Size = new Size(225, 169);
-            dataGridViewTask_GEL.TabIndex = 1;
-            // 
-            // textBoxTask_GEL
-            // 
-            textBoxTask_GEL.Location = new Point(6, 26);
-            textBoxTask_GEL.Multiline = true;
-            textBoxTask_GEL.Name = "textBoxTask_GEL";
-            textBoxTask_GEL.Size = new Size(464, 262);
-            textBoxTask_GEL.TabIndex = 0;
-            textBoxTask_GEL.Text = resources.GetString("textBoxTask_GEL.Text");
-            // 
-            // groupBoxOutput_GEL
-            // 
-            groupBoxOutput_GEL.Controls.Add(dataGridViewResult_GEL);
-            groupBoxOutput_GEL.Controls.Add(labelResult_GEL);
-            groupBoxOutput_GEL.Location = new Point(493, 0);
-            groupBoxOutput_GEL.Name = "groupBoxOutput_GEL";
-            groupBoxOutput_GEL.Size = new Size(460, 377);
-            groupBoxOutput_GEL.TabIndex = 1;
-            groupBoxOutput_GEL.TabStop = false;
-            groupBoxOutput_GEL.Text = "Вывод данных";
-            // 
-            // dataGridViewResult_GEL
-            // 
-            dataGridViewResult_GEL.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewResult_GEL.ColumnHeadersVisible = false;
-            dataGridViewResult_GEL.Location = new Point(6, 56);
-            dataGridViewResult_GEL.Name = "dataGridViewResult_GEL";
-            dataGridViewResult_GEL.ReadOnly = true;
-            dataGridViewResult_GEL.RowHeadersVisible = false;
-            dataGridViewResult_GEL.RowHeadersWidth = 51;
-            dataGridViewResult_GEL.Size = new Size(228, 188);
-            dataGridViewResult_GEL.TabIndex = 1;
-            // 
-            // labelResult_GEL
-            // 
-            labelResult_GEL.AutoSize = true;
-            labelResult_GEL.Location = new Point(6, 23);
-            labelResult_GEL.Name = "labelResult_GEL";
-            labelResult_GEL.Size = new Size(78, 20);
-            labelResult_GEL.TabIndex = 0;
-            labelResult_GEL.Text = "Результат:";
-            // 
-            // buttonInfo_GEL
-            // 
-            buttonInfo_GEL.Location = new Point(717, 383);
-            buttonInfo_GEL.Name = "buttonInfo_GEL";
-            buttonInfo_GEL.Size = new Size(65, 55);
-            buttonInfo_GEL.TabIndex = 2;
-            buttonInfo_GEL.Text = "?";
-            buttonInfo_GEL.UseVisualStyleBackColor = true;
-            buttonInfo_GEL.Click += buttonInfo_GEL_Click;
-            // 
-            // buttonRun_GEL
-            // 
-            buttonRun_GEL.Location = new Point(788, 383);
-            buttonRun_GEL.Name = "buttonRun_GEL";
-            buttonRun_GEL.Size = new Size(165, 55);
-            buttonRun_GEL.TabIndex = 3;
-            buttonRun_GEL.Text = "Выполнить";
-            buttonRun_GEL.UseVisualStyleBackColor = true;
-            buttonRun_GEL.Click += buttonRun_GEL_Click;
-            // 
-            // FormMain
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(965, 450);
-            Controls.Add(buttonRun_GEL);
-            Controls.Add(buttonInfo_GEL);
-            Controls.Add(groupBoxOutput_GEL);
-            Controls.Add(groupBoxTask_GEL);
-            Name = "FormMain";
-            Text = "Спринт 6 | Таск 2 | Вариант 17 | Габеркорн Е.Л.";
-            Load += FormMain_Load;
-            groupBoxTask_GEL.ResumeLayout(false);
-            groupBoxTask_GEL.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewTask_GEL).EndInit();
-            groupBoxOutput_GEL.ResumeLayout(false);
-            groupBoxOutput_GEL.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewResult_GEL).EndInit();
-            ResumeLayout(false);
-        }
+            this.groupBoxTask_GEL = new GroupBox();
+            this.dataGridViewTask_GEL = new DataGridView();
+            this.textBoxTask_GEL = new TextBox();
+            this.groupBoxOutput_GEL = new GroupBox();
+            this.dataGridViewResult_GEL = new DataGridView();
+            this.labelResult_GEL = new Label();
+            this.buttonInfo_GEL = new Button();
+            this.buttonRun_GEL = new Button();
 
-        #endregion
+            this.groupBoxTask_GEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTask_GEL)).BeginInit();
+            this.groupBoxOutput_GEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult_GEL)).BeginInit();
+            this.SuspendLayout();
+
+            // groupBoxTask_GEL
+            this.groupBoxTask_GEL.Controls.Add(this.dataGridViewTask_GEL);
+            this.groupBoxTask_GEL.Controls.Add(this.textBoxTask_GEL);
+            this.groupBoxTask_GEL.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxTask_GEL.Name = "groupBoxTask_GEL";
+            this.groupBoxTask_GEL.Size = new System.Drawing.Size(475, 438);
+            this.groupBoxTask_GEL.TabIndex = 0;
+            this.groupBoxTask_GEL.TabStop = false;
+            this.groupBoxTask_GEL.Text = "Исходная матрица";
+
+            // dataGridViewTask_GEL
+            this.dataGridViewTask_GEL.AllowUserToAddRows = false;
+            this.dataGridViewTask_GEL.AllowUserToDeleteRows = false;
+            this.dataGridViewTask_GEL.ColumnHeadersVisible = false;
+            this.dataGridViewTask_GEL.RowHeadersVisible = false;
+            this.dataGridViewTask_GEL.Location = new System.Drawing.Point(225, 91);
+            this.dataGridViewTask_GEL.Name = "dataGridViewTask_GEL";
+            this.dataGridViewTask_GEL.ReadOnly = true;
+            this.dataGridViewTask_GEL.Size = new System.Drawing.Size(225, 169);
+            this.dataGridViewTask_GEL.TabIndex = 1;
+
+            // textBoxTask_GEL (условие задачи)
+            this.textBoxTask_GEL.Location = new System.Drawing.Point(6, 26);
+            this.textBoxTask_GEL.Multiline = true;
+            this.textBoxTask_GEL.Name = "textBoxTask_GEL";
+            this.textBoxTask_GEL.ReadOnly = true;
+            this.textBoxTask_GEL.ScrollBars = ScrollBars.Vertical;
+            this.textBoxTask_GEL.Size = new System.Drawing.Size(464, 262);
+            this.textBoxTask_GEL.TabIndex = 0;
+            this.textBoxTask_GEL.Text = "Дана матрица. Обработать её по условию задания.";
+
+            // groupBoxOutput_GEL
+            this.groupBoxOutput_GEL.Controls.Add(this.dataGridViewResult_GEL);
+            this.groupBoxOutput_GEL.Controls.Add(this.labelResult_GEL);
+            this.groupBoxOutput_GEL.Location = new System.Drawing.Point(493, 12);
+            this.groupBoxOutput_GEL.Name = "groupBoxOutput_GEL";
+            this.groupBoxOutput_GEL.Size = new System.Drawing.Size(460, 377);
+            this.groupBoxOutput_GEL.TabIndex = 1;
+            this.groupBoxOutput_GEL.TabStop = false;
+            this.groupBoxOutput_GEL.Text = "Результат";
+
+            // dataGridViewResult_GEL
+            this.dataGridViewResult_GEL.AllowUserToAddRows = false;
+            this.dataGridViewResult_GEL.AllowUserToDeleteRows = false;
+            this.dataGridViewResult_GEL.ColumnHeadersVisible = false;
+            this.dataGridViewResult_GEL.RowHeadersVisible = false;
+            this.dataGridViewResult_GEL.Location = new System.Drawing.Point(6, 56);
+            this.dataGridViewResult_GEL.Name = "dataGridViewResult_GEL";
+            this.dataGridViewResult_GEL.ReadOnly = true;
+            this.dataGridViewResult_GEL.Size = new System.Drawing.Size(228, 188);
+            this.dataGridViewResult_GEL.TabIndex = 1;
+
+            // labelResult_GEL
+            this.labelResult_GEL.AutoSize = true;
+            this.labelResult_GEL.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.labelResult_GEL.Location = new System.Drawing.Point(6, 23);
+            this.labelResult_GEL.Name = "labelResult_GEL";
+            this.labelResult_GEL.Size = new System.Drawing.Size(78, 23);
+            this.labelResult_GEL.TabIndex = 0;
+            this.labelResult_GEL.Text = "Результат:";
+
+            // buttonInfo_GEL
+            this.buttonInfo_GEL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.buttonInfo_GEL.Location = new System.Drawing.Point(717, 395);
+            this.buttonInfo_GEL.Name = "buttonInfo_GEL";
+            this.buttonInfo_GEL.Size = new System.Drawing.Size(65, 55);
+            this.buttonInfo_GEL.TabIndex = 2;
+            this.buttonInfo_GEL.Text = "?";
+            this.buttonInfo_GEL.UseVisualStyleBackColor = true;
+            this.buttonInfo_GEL.Click += new System.EventHandler(this.buttonInfo_GEL_Click);
+
+            // buttonRun_GEL
+            this.buttonRun_GEL.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.buttonRun_GEL.Location = new System.Drawing.Point(788, 395);
+            this.buttonRun_GEL.Name = "buttonRun_GEL";
+            this.buttonRun_GEL.Size = new System.Drawing.Size(165, 55);
+            this.buttonRun_GEL.TabIndex = 3;
+            this.buttonRun_GEL.Text = "Выполнить";
+            this.buttonRun_GEL.UseVisualStyleBackColor = true;
+            this.buttonRun_GEL.Click += new System.EventHandler(this.buttonRun_GEL_Click);
+
+            // FormMain
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(965, 462);
+            this.Controls.Add(this.buttonRun_GEL);
+            this.Controls.Add(this.buttonInfo_GEL);
+            this.Controls.Add(this.groupBoxOutput_GEL);
+            this.Controls.Add(this.groupBoxTask_GEL);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "FormMain";
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.Text = "Sprint #6 | Task #3 | V17 | Габеркорн Е. Л. | АСОиУб-25-1";
+
+            this.groupBoxTask_GEL.ResumeLayout(false);
+            this.groupBoxTask_GEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTask_GEL)).EndInit();
+            this.groupBoxOutput_GEL.ResumeLayout(false);
+            this.groupBoxOutput_GEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult_GEL)).EndInit();
+            this.ResumeLayout(false);
+        }
 
         private GroupBox groupBoxTask_GEL;
         private DataGridView dataGridViewTask_GEL;

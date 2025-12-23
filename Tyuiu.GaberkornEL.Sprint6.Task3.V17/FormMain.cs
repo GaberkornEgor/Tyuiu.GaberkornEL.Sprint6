@@ -1,14 +1,11 @@
-﻿using Tyuiu.GaberkornEL.Sprint6.Task3.V17.Lib;
+﻿using System;
+using System.Windows.Forms;
+using Tyuiu.GaberkornEL.Sprint6.Task3.V17.Lib;
 
 namespace Tyuiu.GaberkornEL.Sprint6.Task3.V17
 {
     public partial class FormMain : Form
     {
-        public FormMain()
-        {
-            InitializeComponent();
-        }
-
         DataService ds = new DataService();
 
         int[,] mtrx = new int[5, 5] {
@@ -19,36 +16,14 @@ namespace Tyuiu.GaberkornEL.Sprint6.Task3.V17
             {11, 20, 12, 7, 29},
         };
 
-        private void buttonRun_GEL_Click(object sender, EventArgs e)
+        public FormMain()
         {
-            int[,] res = ds.Calculate(mtrx);
-            int rows = res.GetUpperBound(0) + 1;
-            int columns = res.Length / rows;
-
-            dataGridViewResult_GEL.ColumnCount = columns;
-            dataGridViewResult_GEL.RowCount = rows;
-
-            for (int i = 0; i < columns; i++)
-            {
-                dataGridViewResult_GEL.Columns[i].Width = 40;
-            }
-
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < columns; j++)
-                {
-                    dataGridViewResult_GEL.Rows[i].Cells[j].Value = Convert.ToString(mtrx[i, j]);
-                }
-            }
-        }
-
-        private void buttonInfo_ÆÒÀ_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("таск 3 Габеркорн Егор Леонидович", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            InitializeComponent();
         }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+
             int rows = mtrx.GetUpperBound(0) + 1;
             int columns = mtrx.Length / rows;
 
@@ -57,16 +32,46 @@ namespace Tyuiu.GaberkornEL.Sprint6.Task3.V17
 
             for (int i = 0; i < columns; i++)
             {
-                dataGridViewTask_GEL.Columns[i].Width = 40;
+                dataGridViewTask_GEL.Columns[i].Width = 50;
             }
 
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    dataGridViewTask_GEL.Rows[i].Cells[j].Value = Convert.ToString(mtrx[i, j]);
+                    dataGridViewTask_GEL.Rows[i].Cells[j].Value = mtrx[i, j];
                 }
             }
+        }
+
+        private void buttonRun_GEL_Click(object sender, EventArgs e)
+        {
+            int[,] res = ds.Calculate(mtrx);
+
+            int rows = res.GetUpperBound(0) + 1;
+            int columns = res.Length / rows;
+
+            dataGridViewResult_GEL.ColumnCount = columns;
+            dataGridViewResult_GEL.RowCount = rows;
+
+            for (int i = 0; i < columns; i++)
+            {
+                dataGridViewResult_GEL.Columns[i].Width = 50;
+            }
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    dataGridViewResult_GEL.Rows[i].Cells[j].Value = res[i, j];
+                }
+            }
+        }
+
+        private void buttonInfo_GEL_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Таск 3 выполнил студент группы АСОиУб-25-1 Габеркорн Егор Леонидович",
+                "Справка", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -20,69 +20,94 @@
 
         private void InitializeComponent()
         {
-            this.dataGridViewIn = new System.Windows.Forms.DataGridView();
-            this.dataGridViewOut = new System.Windows.Forms.DataGridView();
-            this.buttonOpen = new System.Windows.Forms.Button();
-            this.buttonProcess = new System.Windows.Forms.Button();
-            this.buttonInfo = new System.Windows.Forms.Button();
-            this.labelIn = new System.Windows.Forms.Label();
-            this.labelOut = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOut)).BeginInit();
-            this.SuspendLayout();
-
+            dataGridViewIn = new DataGridView();
+            dataGridViewOut = new DataGridView();
+            buttonOpen = new Button();
+            buttonProcess = new Button();
+            buttonInfo = new Button();
+            labelIn = new Label();
+            labelOut = new Label();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewIn).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewOut).BeginInit();
+            SuspendLayout();
+            // 
             // dataGridViewIn
-            this.dataGridViewIn.Location = new System.Drawing.Point(20, 60);
-            this.dataGridViewIn.Size = new System.Drawing.Size(350, 260);
-
+            // 
+            dataGridViewIn.Location = new Point(20, 60);
+            dataGridViewIn.Name = "dataGridViewIn";
+            dataGridViewIn.Size = new Size(350, 260);
+            dataGridViewIn.TabIndex = 0;
+            // 
             // dataGridViewOut
-            this.dataGridViewOut.Location = new System.Drawing.Point(400, 60);
-            this.dataGridViewOut.Size = new System.Drawing.Size(350, 260);
-
+            // 
+            dataGridViewOut.Location = new Point(400, 60);
+            dataGridViewOut.Name = "dataGridViewOut";
+            dataGridViewOut.Size = new Size(350, 260);
+            dataGridViewOut.TabIndex = 1;
+            // 
             // buttonOpen
-            this.buttonOpen.Location = new System.Drawing.Point(20, 20);
-            this.buttonOpen.Size = new System.Drawing.Size(140, 30);
-            this.buttonOpen.Text = "Выбрать файл";
-            this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);
-
+            // 
+            buttonOpen.Location = new Point(12, 7);
+            buttonOpen.Name = "buttonOpen";
+            buttonOpen.Size = new Size(140, 30);
+            buttonOpen.TabIndex = 2;
+            buttonOpen.Text = "Выбрать файл";
+            buttonOpen.Click += buttonOpen_Click;
+            // 
             // buttonProcess
-            this.buttonProcess.Location = new System.Drawing.Point(180, 20);
-            this.buttonProcess.Size = new System.Drawing.Size(140, 30);
-            this.buttonProcess.Text = "Обработать";
-            this.buttonProcess.Click += new System.EventHandler(this.buttonProcess_Click);
-
+            // 
+            buttonProcess.Location = new Point(179, 7);
+            buttonProcess.Name = "buttonProcess";
+            buttonProcess.Size = new Size(140, 30);
+            buttonProcess.TabIndex = 3;
+            buttonProcess.Text = "Обработать";
+            buttonProcess.Click += buttonProcess_Click;
+            // 
             // buttonInfo
-            this.buttonInfo.Location = new System.Drawing.Point(750, 20);
-            this.buttonInfo.Size = new System.Drawing.Size(30, 30);
-            this.buttonInfo.Text = "?";
-            this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
-
+            // 
+            buttonInfo.Location = new Point(750, 20);
+            buttonInfo.Name = "buttonInfo";
+            buttonInfo.Size = new Size(30, 30);
+            buttonInfo.TabIndex = 4;
+            buttonInfo.Text = "?";
+            buttonInfo.Click += buttonInfo_Click;
+            // 
             // labelIn
-            this.labelIn.Location = new System.Drawing.Point(20, 40);
-            this.labelIn.AutoSize = true;
-            this.labelIn.Text = "Входная матрица";
-
+            // 
+            labelIn.AutoSize = true;
+            labelIn.Location = new Point(20, 40);
+            labelIn.Name = "labelIn";
+            labelIn.Size = new Size(101, 15);
+            labelIn.TabIndex = 5;
+            labelIn.Text = "Входная матрица";
+            // 
             // labelOut
-            this.labelOut.Location = new System.Drawing.Point(400, 40);
-            this.labelOut.AutoSize = true;
-            this.labelOut.Text = "Результат";
-
+            // 
+            labelOut.AutoSize = true;
+            labelOut.Location = new Point(400, 40);
+            labelOut.Name = "labelOut";
+            labelOut.Size = new Size(60, 15);
+            labelOut.TabIndex = 6;
+            labelOut.Text = "Результат";
+            // 
             // FormMain
-            this.ClientSize = new System.Drawing.Size(800, 350);
-            this.Controls.Add(this.dataGridViewIn);
-            this.Controls.Add(this.dataGridViewOut);
-            this.Controls.Add(this.buttonOpen);
-            this.Controls.Add(this.buttonProcess);
-            this.Controls.Add(this.buttonInfo);
-            this.Controls.Add(this.labelIn);
-            this.Controls.Add(this.labelOut);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Text = "Спринт 6 | Таск 7 | Вариант 26 | Габеркорн Е.Л.";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOut)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            // 
+            ClientSize = new Size(800, 350);
+            Controls.Add(dataGridViewIn);
+            Controls.Add(dataGridViewOut);
+            Controls.Add(buttonOpen);
+            Controls.Add(buttonProcess);
+            Controls.Add(buttonInfo);
+            Controls.Add(labelIn);
+            Controls.Add(labelOut);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Name = "FormMain";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Спринт 6 | Таск 7 | Вариант 26 | Габеркорн Е.Л.";
+            ((System.ComponentModel.ISupportInitialize)dataGridViewIn).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewOut).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
     }
 }

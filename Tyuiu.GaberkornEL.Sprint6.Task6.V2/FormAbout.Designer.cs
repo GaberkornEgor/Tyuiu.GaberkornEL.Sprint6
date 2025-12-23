@@ -1,20 +1,9 @@
-﻿using System.Windows.Forms;
-using System.Xml.Linq;
-using static System.Net.Mime.MediaTypeNames;
-
-namespace Tyuiu.GaberkornEL.Sprint6.Task6.V2
+﻿namespace Tyuiu.GaberkornEL.Sprint6.Task6.V2
 {
-    partial class FormAbout_GEL
+    partial class FormAbout
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -24,70 +13,62 @@ namespace Tyuiu.GaberkornEL.Sprint6.Task6.V2
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout_GEL));
-            textBoxInfo_GEL = new TextBox();
-            pictureBoxOne_GEL = new PictureBox();
-            buttonDone_GEL = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxOne_GEL).BeginInit();
-            SuspendLayout();
-            // 
-            // textBoxInfo_GEL
-            // 
-            textBoxInfo_GEL.BorderStyle = BorderStyle.None;
-            textBoxInfo_GEL.Location = new Point(184, 12);
-            textBoxInfo_GEL.Multiline = true;
-            textBoxInfo_GEL.Name = "textBoxInfo_GEL";
-            textBoxInfo_GEL.ReadOnly = true;
-            textBoxInfo_GEL.Size = new Size(368, 161);
-            textBoxInfo_GEL.TabIndex = 0;
-            textBoxInfo_GEL.Text = resources.GetString("textBoxInfo_GEL.Text");
-            // 
-            // pictureBoxOne_GEL
-            // 
-            pictureBoxOne_GEL.Image = Properties.Resources.p_DSC0978_kopia__2_;
-            pictureBoxOne_GEL.Location = new Point(12, 12);
-            pictureBoxOne_GEL.Name = "pictureBoxOne_GEL";
-            pictureBoxOne_GEL.Size = new Size(166, 198);
-            pictureBoxOne_GEL.TabIndex = 1;
-            pictureBoxOne_GEL.TabStop = false;
-            // 
-            // buttonDone_SNM
-            // 
-            buttonDone_GEL.Location = new Point(500, 187);
-            buttonDone_GEL.Name = "buttonDone_SNM";
-            buttonDone_GEL.Size = new Size(75, 23);
-            buttonDone_GEL.TabIndex = 2;
-            buttonDone_GEL.Text = "ОК";
-            buttonDone_GEL.UseVisualStyleBackColor = true;
-            buttonDone_GEL.Click += buttonDone_GEL_Click;
-            // 
-            // FormAbout_SNM
-            // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(587, 222);
-            Controls.Add(buttonDone_GEL);
-            Controls.Add(pictureBoxOne_GEL);
-            Controls.Add(textBoxInfo_GEL);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
-            MinimizeBox = false;
-            Name = "FormAbout_SNM";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "О программе";
-            ((System.ComponentModel.ISupportInitialize)pictureBoxOne_GEL).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
-        }
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
 
-        #endregion
+            this.textBoxInfo_GEL = new TextBox();
+            this.pictureBoxOne_GEL = new PictureBox();
+            this.buttonDone_GEL = new Button();
+
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOne_GEL)).BeginInit();
+            this.SuspendLayout();
+
+            // textBoxInfo_GEL
+            this.textBoxInfo_GEL.Location = new System.Drawing.Point(184, 12);
+            this.textBoxInfo_GEL.Multiline = true;
+            this.textBoxInfo_GEL.Name = "textBoxInfo_GEL";
+            this.textBoxInfo_GEL.ReadOnly = true;
+            this.textBoxInfo_GEL.Size = new System.Drawing.Size(368, 161);
+            this.textBoxInfo_GEL.TabIndex = 0;
+            this.textBoxInfo_GEL.Text = "Задание выполнил:\r\nСтудент группы АСОиУб-25-1\r\nГаберкорн Егор Леонидович\r\n\r\nСпринт #6 | Задание #6 | Вариант #2";
+
+            // pictureBoxOne_GEL
+            this.pictureBoxOne_GEL.Image = Properties.Resources.p_DSC0978_kopia__2_; // оставь свою фотку
+            this.pictureBoxOne_GEL.Location = new System.Drawing.Point(12, 12);
+            this.pictureBoxOne_GEL.Name = "pictureBoxOne_GEL";
+            this.pictureBoxOne_GEL.Size = new System.Drawing.Size(166, 198);
+            this.pictureBoxOne_GEL.SizeMode = PictureBoxSizeMode.StretchImage;
+            this.pictureBoxOne_GEL.TabIndex = 1;
+            this.pictureBoxOne_GEL.TabStop = false;
+
+            // buttonDone_GEL
+            this.buttonDone_GEL.Location = new System.Drawing.Point(477, 187);
+            this.buttonDone_GEL.Name = "buttonDone_GEL";
+            this.buttonDone_GEL.Size = new System.Drawing.Size(75, 30);
+            this.buttonDone_GEL.TabIndex = 2;
+            this.buttonDone_GEL.Text = "ОК";
+            this.buttonDone_GEL.UseVisualStyleBackColor = true;
+            this.buttonDone_GEL.Click += new System.EventHandler(this.buttonDone_GEL_Click);
+
+            // FormAbout
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(564, 222);
+            this.Controls.Add(this.buttonDone_GEL);
+            this.Controls.Add(this.pictureBoxOne_GEL);
+            this.Controls.Add(this.textBoxInfo_GEL);
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FormAbout";
+            this.StartPosition = FormStartPosition.CenterParent;
+            this.Text = "О программе";
+
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOne_GEL)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
 
         private TextBox textBoxInfo_GEL;
         private PictureBox pictureBoxOne_GEL;
